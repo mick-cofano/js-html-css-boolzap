@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Boolzap</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
@@ -12,7 +13,59 @@
     <!-- background top-green -->
 
     <!-- main center container -->
-    <div class="main-container">
+    <div id="app" class="main-container">
+
+      <!-- Side bar -->
+      <aside class="side">
+        
+          <!-- Section user -->
+          <section class="user">
+              <img :src="'img/avatar' + user.avatar + '.jpg'" alt="user">
+              <h2>{{ user.name }}</h2>
+              <div class="icon">
+                  <i class="fas fa-circle-notch"></i>
+                  <i class="fas fa-comment-alt"></i>
+                  <i class="fas fa-ellipsis-v"></i>
+              </div>
+          </section>
+          <!-- End Section user -->
+
+          <!-- Section Notifications -->
+          <section class="notifications">
+              <div class="icon-notifications">
+                  <i class="fas fa-bell-slash"></i>
+              </div>
+              <div class="text">
+                  <h3>Ricevi notifiche di nuovi messaggi</h3>
+                  <br>
+                  <span><a href="#">Attiva notifiche desktop</a></span>
+              </div>
+          </section>
+          <!-- End Section Notifications -->
+
+          <!-- Section Search bar -->
+          <section class="search-bar">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Cerca o inizia una nuova chat">
+          </section>
+          <!-- End Section Search bar -->
+
+          <!-- Section Contact -->
+          <section class="contacts">
+              <ul class="contact">
+                  <li class="list"
+                  v-for="(contact, index) in contacts"
+                  :class="['contact', index === indexContact ? 'active' : '']"
+                  @click="setIndexContact(index)"
+                  >
+                      <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="avatar 1">
+                      <h3>{{ contact.name }}</h3>
+                  </li>
+              </ul>
+          </section>
+          <!-- End Section Contact -->
+      </aside>
+      <!-- END Side bar -->
 
     </div>
     <!-- main center container -->

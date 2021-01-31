@@ -8,7 +8,7 @@
 // Copiate nel vostro data l'array di oggetti contacts, che trovate nella cartella drive,
 // oppure qui in allegato. */
 
-
+/* UTILITY */
 *{
   box-sizing: border-box;
   padding: 0;
@@ -36,7 +36,136 @@ body {
   display: flex;
   width: 70%;
   height: 90%;
+  min-width: 950px;
   background-color: lightgrey;
   margin: auto;
   z-index: 1;
 }
+
+img {
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 16px;
+}
+/* END UTILITY */
+
+
+/* SIDE BAR */
+.side {
+  background-color: #ffffff;
+  flex-basis: 35%;
+}
+
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+/* USER */
+.user {
+  height: 60px;
+  background-color: #eaeaea;
+  position: relative;
+}
+
+.user i {
+  color: #b1b1b1;
+  position: relative;
+  left: 35%;
+  margin: 0 5px;
+}
+/* END USER */
+
+/* NOTIFICATIONS */
+.notifications {
+  height: 70px;
+  background-color: #74dcff;
+  display: flex;
+}
+
+.icon-notifications {
+  display: flex;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.icon-notifications i {
+  display: block;
+  color: #74dcff;
+  border-radius: 50%;
+  font-size: 40px;
+  background-color: #fff;
+  margin-left: 8px;
+  position: relative;
+  left: 5px;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.notifications h3 {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.notifications span {
+  text-align: center;
+  padding-right: 15px;
+}
+
+.notifications a {
+  color: #437587;
+  font-size: 14px;
+}
+/* END NOTIFICATIONS */
+
+/* SEARCH BAR */
+.search-bar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar i {
+  color: #b1b1b1;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+.search-bar input {
+  border: none;
+  color: #b1b1b1;
+  padding: 5px;
+  width: 80%;
+}
+/* END SEARCH BAR */
+
+/* CONTACTS */
+.contacts ul {
+  list-style: none;
+}
+
+.contacts ul li {
+  cursor: pointer;
+}
+
+.contact li h3 {
+  display: inline-block;
+  font-size: 15px;
+}
+/* END CONTACTS */
+/* --------------- SIDE BAR -------------- */
