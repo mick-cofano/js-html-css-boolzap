@@ -180,6 +180,19 @@ h2 {
 /* --------------- SIDE BAR -------------- */
 
 /* --------------- MAIN CONVERSATION -------------- */
+.main-conv-header {
+  flex-basis: 65%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.header {
+  position: relative;
+  height: 60px;
+  background-color: #eaeaea;
+  display: flex;
+}
+
 .main {
   display: flex;
   background-image: url(../img/mine.jpg);
