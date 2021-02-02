@@ -129,8 +129,14 @@ var app = new Vue({
             message: this.newMess,
             status: 'send'
           });
-          this.newMess = '';
+          this.newMess = ''; // per fare il clear del messaggio dopo l'invio
         }
-      }
+      setTimeout(() => {
+        this.contacts[this.indexContact].messages.push( {
+        message: 'Ok',
+        status: 'received'
+        });
+      }, 1000 )
     }
+  }
 });
