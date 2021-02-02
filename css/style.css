@@ -67,7 +67,11 @@ h2 {
 }
 
 i {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #d9dbd3;
 }
 /* END UTILITY */
 
