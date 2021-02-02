@@ -219,4 +219,12 @@ i {
   min-width: 90%;
 }
 /* MAIN CONVERSATION */
+
+/* FOOTER */
+.footer {
+  height: 60px;
+  display: flex;
+  background-color: #fff;
+}
+/* END FOOTER */
 /* --------------- END MAIN CONTENT -------------- */

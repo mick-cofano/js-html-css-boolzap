@@ -87,11 +87,20 @@
         <!-- main conversation -->
         <div class="main">
           <div class="main-conversation">
+            <div v-for="message in contacts[indexContact].messages"
+            :class="['sent', message.status]">
 
+                <p>{{ message.message }}</p>
+            </div>
           </div>
         </div>
         <!-- END main conversation -->
 
+        <!-- Text area -->
+        <div class="footer">
+
+        </div>
+        <!-- END Text area -->
       </div>
 
 
