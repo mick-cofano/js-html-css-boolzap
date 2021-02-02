@@ -253,6 +253,34 @@ i {
   background-color: #fff;
 }
 
+.text-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.text-bar input {
+  width: 100%;
+  border: 1px solid black;
+  background-color: #fff;
+  color: #858585;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.emoticons {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.microphone {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* END FOOTER */
 /* --------------- END MAIN CONTENT -------------- */
