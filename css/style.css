@@ -213,6 +213,7 @@ i {
   display: flex;
   background-image: url(../img/mine.jpg);
   flex-grow: 1;
+  overflow-y: auto;
 }
 
 .main-conversation {

@@ -131,6 +131,7 @@ var app = new Vue({
           });
           this.newMess = ''; // per fare il clear del messaggio dopo l'invio
         }
+    // funzione per ricevere dopo 1 sec una risposta dopo l'input
       setTimeout(() => {
         this.contacts[this.indexContact].messages.push( {
         message: 'Ok',
