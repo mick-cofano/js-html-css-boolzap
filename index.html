@@ -72,7 +72,15 @@
 
         <!-- header conversation - with profile img and name -->
         <div class="header">
-
+          <img :src="`./img/avatar${contacts[indexContact].avatar}.jpg`" alt="">
+          <div class="friend-info">
+            <h3>{{contacts[indexContact].name}}</h3>
+          </div>
+          <div class="icon">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-paperclip"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
         </div>
         <!-- END header conversation - with profile img and name -->
 
@@ -83,7 +91,7 @@
           </div>
         </div>
         <!-- END main conversation -->
-        
+
       </div>
 
 

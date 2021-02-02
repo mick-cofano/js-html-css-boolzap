@@ -57,11 +57,17 @@ img {
   display: inline-block;
   vertical-align: middle;
   margin: 10px;
+  cursor: pointer;
 }
 
 h2 {
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
+}
+
+i {
+    cursor: pointer;
 }
 /* END UTILITY */
 
@@ -179,13 +185,14 @@ h2 {
 /* END CONTACTS */
 /* --------------- SIDE BAR -------------- */
 
-/* --------------- MAIN CONVERSATION -------------- */
+/* --------------- MAIN CONTENT -------------- */
 .main-content {
   flex-basis: 65%;
   display: inline-flex;
   flex-direction: column;
 }
 
+/* HEADER WITH PROFILE IMG AND NAME */
 .header {
   position: relative;
   height: 60px;
@@ -193,6 +200,15 @@ h2 {
   display: flex;
 }
 
+.friend-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+/* END HEADER WITH PROFILE IMG AND NAME */
+
+/* MAIN CONVERSATION */
 .main {
   display: flex;
   background-image: url(../img/mine.jpg);
@@ -202,4 +218,5 @@ h2 {
 .main-conversation {
   min-width: 90%;
 }
-/* --------------- END MAIN CONVERSATION -------------- */
+/* MAIN CONVERSATION */
+/* --------------- END MAIN CONTENT -------------- */
