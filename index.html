@@ -103,7 +103,7 @@
           </div>
 
           <div class="text-bar">
-            <input type="text" placeholder="Scrivi un messaggio">
+            <input type="text" placeholder="Scrivi un messaggio" v-model="newMess" @keyup.enter="addMess">
           </div>
 
           <div class="microphone">

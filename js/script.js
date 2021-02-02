@@ -111,14 +111,26 @@ var app = new Vue({
         ],
       },
     ],
-    indexContact: 0
+    indexContact: 0,
+    newMess: '',
 // SEZIONE CONTATTI --------------------------
   },
   methods: { // funzioni
+    // funzione per selezionare l'index del contatto
       setIndexContact(index) {
           console.log(index);
 
           this.indexContact = index;
+      },
+    // funzione per inviare un nuovo messaggio e visualizzarlo nella chat
+      addMess() {
+        if (this.newMess.trim() !== '') {
+          this.contacts[this.indexContact].messages.push({
+            message: this.newMess,
+            status: 'send'
+          });
+          this.newMess = '';
+        }
       }
     }
 });
