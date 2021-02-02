@@ -90,7 +90,7 @@
             <div v-for="message in contacts[indexContact].messages"
             :class="['sent', message.status]">
 
-                <p>{{ message.message }}</p>
+                <p class="message-text">{{ message.message }}</p>
             </div>
           </div>
         </div>
@@ -98,7 +98,17 @@
 
         <!-- Text area -->
         <div class="footer">
+          <div class="emoticons">
 
+          </div>
+
+          <div class="text-bar">
+            <input type="text" placeholder="Scrivi un messaggio">
+          </div>
+
+          <div class="microphone">
+            
+          </div>
         </div>
         <!-- END Text area -->
       </div>
