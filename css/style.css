@@ -180,7 +180,7 @@ h2 {
 /* --------------- SIDE BAR -------------- */
 
 /* --------------- MAIN CONVERSATION -------------- */
-.main-conv-header {
+.main-content {
   flex-basis: 65%;
   display: inline-flex;
   flex-direction: column;
