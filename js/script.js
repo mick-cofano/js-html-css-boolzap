@@ -22,7 +22,7 @@ var app = new Vue({
   data: {
 // SEZIONE ACCOUNT UTENTE --------------------------
     user: {
-        name: 'Nome Utente',
+        name: 'Mick',
         avatar: '_io'
     },
 // SEZIONE CONTATTI --------------------------
@@ -112,6 +112,7 @@ var app = new Vue({
       },
     ],
     indexContact: 0,
+    contactSearchInput: '',
     newMess: '',
 // SEZIONE CONTATTI --------------------------
   },
@@ -125,7 +126,8 @@ var app = new Vue({
     // funzione per inviare un nuovo messaggio e visualizzarlo nella chat
       addMess() {
         if (this.newMess.trim() !== '') {
-          this.contacts[this.indexContact].messages.push({
+          this.contacts[this.indexContact].messages.push( {
+            date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
             message: this.newMess,
             status: 'send'
           });
@@ -134,10 +136,14 @@ var app = new Vue({
     // funzione per ricevere dopo 1 sec una risposta dopo l'input
       setTimeout(() => {
         this.contacts[this.indexContact].messages.push( {
+        date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
         message: 'Ok',
         status: 'received'
         });
       }, 1000 )
-    }
+    },
+    // funzione per ricerca utente nella barra "search bar"
+    
   }
 });
+Vue.config.devtools = true;

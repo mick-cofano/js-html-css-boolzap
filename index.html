@@ -75,6 +75,8 @@
           <img :src="`./img/avatar${contacts[indexContact].avatar}.jpg`" alt="">
           <div class="friend-info">
             <h3>{{contacts[indexContact].name}}</h3>
+            <br>
+            <span>Ultimo accesso oggi alle 08:13</span>
           </div>
           <div class="icon">
             <i class="fas fa-search"></i>
@@ -91,7 +93,11 @@
             :class="['sent', message.status]">
 
                 <p class="message-text">{{ message.message }}</p>
+
+                <!-- data e ora del messaggio inviato -->
+                <span>{{ message.date }}</span>
             </div>
+
           </div>
         </div>
         <!-- END main conversation -->
@@ -121,6 +127,7 @@
     <!-- main center container -->
 
     <!-- script-js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.6/dayjs.min.js"></script>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
